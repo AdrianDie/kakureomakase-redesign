@@ -466,6 +466,36 @@ p { margin: 0 0 1.1em; }
 .gallery-grid img { width: 100%; height: 100%; object-fit: cover; aspect-ratio: 3/4; transition: transform 0.6s var(--ease); }
 .gallery-grid figure:hover img { transform: scale(1.04); }
 
+/* ---------- reviews ---------- */
+.reviews-section { padding: 110px 0; background: var(--cream); text-align: center; }
+.reviews-section .eyebrow { text-align: center; }
+.reviews-section h2 { margin-bottom: 0.7em; }
+.reviews-grid {
+  max-width: 680px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+.review-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 36px 28px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+.review-card:hover { border-color: var(--accent); transform: translateY(-3px); }
+.review-logo { width: 40px; height: 40px; border-radius: 50%; margin-bottom: 4px; }
+.review-stars { color: var(--accent); font-size: 1.2rem; letter-spacing: 0.1em; }
+.review-score { font-family: 'Cormorant', serif; font-size: 2.6rem; color: var(--text-dark); line-height: 1; }
+.review-score span { font-family: 'Montserrat', sans-serif; font-size: 1rem; color: var(--text-muted); }
+.review-count { font-size: 0.85rem; color: var(--text-muted); }
+.reviews-cta { margin-top: 34px; margin-bottom: 0; font-size: 0.95rem; color: var(--text-muted); }
+.reviews-cta a { color: var(--accent); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+
 /* ---------- contact ---------- */
 .contact-section { background: var(--ink-2); color: var(--cream); padding: 130px 0; }
 .contact-grid {
@@ -504,7 +534,7 @@ p { margin: 0 0 1.1em; }
 /* ================= responsive ================= */
 @media (max-width: 1024px) {
   .roots-grid, .chef-grid, .contact-grid { gap: 52px; }
-  .intro-section, .roots-section, .chef-section, .menu-section, .gallery-section, .contact-section { padding: 100px 0; }
+  .intro-section, .roots-section, .chef-section, .menu-section, .gallery-section, .reviews-section, .contact-section { padding: 100px 0; }
 }
 
 @media (max-width: 900px) {
@@ -541,7 +571,7 @@ p { margin: 0 0 1.1em; }
   .hero-bg-image { object-position: 65% 32%; }
   .hero-content { padding: 0 24px 90px; }
   h1 { font-size: clamp(2.3rem, 9vw, 3.2rem); }
-  .intro-section, .roots-section, .chef-section, .menu-section, .gallery-section, .contact-section { padding: 84px 0; }
+  .intro-section, .roots-section, .chef-section, .menu-section, .gallery-section, .reviews-section, .contact-section { padding: 84px 0; }
   .container { padding: 0 24px; }
   .gallery-grid { padding: 0 24px; }
   .hero-actions { gap: 14px; }
@@ -550,6 +580,7 @@ p { margin: 0 0 1.1em; }
 
 @media (max-width: 560px) {
   .gallery-grid { grid-template-columns: 1fr; }
+  .reviews-grid { grid-template-columns: 1fr; max-width: 320px; }
   .menu-card { padding: 38px 26px; }
   .contact-row a { display: block; margin-right: 0; margin-bottom: 6px; }
   .social-row { flex-wrap: wrap; }
