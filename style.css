@@ -161,7 +161,7 @@ h1, h2, h3 {
   margin: 0 0 0.5em;
   color: inherit;
 }
-h1 { font-size: clamp(2.2rem, 4.6vw, 3.8rem); font-weight: 500; }
+h1 { font-size: clamp(1.9rem, 4vw, 3.3rem); font-weight: 500; }
 h2 { font-size: clamp(2rem, 4vw, 3.1rem); }
 h3 { font-size: clamp(1.4rem, 2.4vw, 1.7rem); font-weight: 500; }
 p { margin: 0 0 1.1em; }
@@ -223,7 +223,7 @@ p { margin: 0 0 1.1em; }
 }
 .btn-ghost-dark:hover { border-color: var(--text-dark); }
 
-.hero-actions { display: flex; gap: 18px; flex-wrap: wrap; margin-top: 2.2em; }
+.hero-actions { display: flex; gap: 18px; flex-wrap: wrap; margin-top: 2.2em; justify-content: center; }
 
 /* ---------- reveal ---------- */
 .reveal {
@@ -370,10 +370,11 @@ p { margin: 0 0 1.1em; }
   z-index: 2;
   max-width: 680px;
   padding: 0 32px 110px;
-  margin: 0 auto 0 0;
+  margin: 0 auto;
+  text-align: center;
 }
 .hero-content h1 { color: var(--cream); }
-.hero-lead { font-size: 1.08rem; max-width: 480px; color: rgba(255, 238, 216, 0.88); }
+.hero-lead { font-size: 1.08rem; max-width: 480px; color: rgba(255, 238, 216, 0.88); margin-left: auto; margin-right: auto; }
 .scroll-cue {
   position: absolute;
   bottom: 34px; left: 50%;
@@ -571,7 +572,7 @@ p { margin: 0 0 1.1em; }
 @media (max-width: 768px) {
   .hero-bg-video { object-position: 50% 18%; }
   .hero-content { padding: 0 24px 90px; }
-  h1 { font-size: clamp(2rem, 7.5vw, 2.7rem); }
+  h1 { font-size: clamp(1.8rem, 6.5vw, 2.4rem); }
   .intro-section, .roots-section, .chef-section, .menu-section, .gallery-section, .reviews-section, .contact-section { padding: 84px 0; }
   .container { padding: 0 24px; }
   .gallery-grid { padding: 0 24px; }
