@@ -161,7 +161,7 @@ h1, h2, h3 {
   margin: 0 0 0.5em;
   color: inherit;
 }
-h1 { font-size: clamp(2.6rem, 5.5vw, 4.6rem); font-weight: 500; }
+h1 { font-size: clamp(2.2rem, 4.6vw, 3.8rem); font-weight: 500; }
 h2 { font-size: clamp(2rem, 4vw, 3.1rem); }
 h3 { font-size: clamp(1.4rem, 2.4vw, 1.7rem); font-weight: 500; }
 p { margin: 0 0 1.1em; }
@@ -571,7 +571,7 @@ p { margin: 0 0 1.1em; }
 @media (max-width: 768px) {
   .hero-bg-video { object-position: 50% 18%; }
   .hero-content { padding: 0 24px 90px; }
-  h1 { font-size: clamp(2.3rem, 9vw, 3.2rem); }
+  h1 { font-size: clamp(2rem, 7.5vw, 2.7rem); }
   .intro-section, .roots-section, .chef-section, .menu-section, .gallery-section, .reviews-section, .contact-section { padding: 84px 0; }
   .container { padding: 0 24px; }
   .gallery-grid { padding: 0 24px; }
