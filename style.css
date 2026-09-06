@@ -242,7 +242,7 @@ p { margin: 0 0 1.1em; }
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 100;
-  padding: 26px 0;
+  padding: 16px 0;
   transition: background-color 0.4s ease, padding 0.4s ease, box-shadow 0.4s ease;
 }
 .header-inner {
@@ -254,10 +254,10 @@ p { margin: 0 0 1.1em; }
   justify-content: space-between;
   gap: 24px;
 }
-.logo-link { position: relative; display: block; width: 130px; height: 80px; flex-shrink: 0; overflow: hidden; }
+.logo-link { position: relative; display: block; width: 104px; height: 64px; flex-shrink: 0; overflow: hidden; }
 .logo-link img {
   position: absolute; top: 0; left: 0;
-  width: 130px; height: auto;
+  width: 104px; height: auto;
   transition: opacity 0.4s ease;
 }
 .logo-link .logo-dark { opacity: 0; }
@@ -278,7 +278,7 @@ p { margin: 0 0 1.1em; }
 
 .site-header.scrolled {
   background: var(--cream);
-  padding: 16px 0;
+  padding: 10px 0;
   box-shadow: 0 8px 24px -16px rgba(19, 16, 5, 0.25);
 }
 .site-header.scrolled .logo-cream { opacity: 0; }
@@ -591,6 +591,6 @@ p { margin: 0 0 1.1em; }
 
 @media (max-width: 400px) {
   .header-inner { padding: 0 20px; }
-  .logo-link { width: 112px; height: 68px; }
-  .logo-link img { width: 112px; }
+  .logo-link { width: 92px; height: 56px; }
+  .logo-link img { width: 92px; }
 }
