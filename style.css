@@ -532,6 +532,8 @@ p { margin: 0 0 1.1em; }
 .footer-inner { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
 .footer-inner a { color: rgba(255, 238, 216, 0.75); }
 .footer-inner a:hover { color: var(--cream); }
+.footer-inner a[href*="dmarketing"] { color: var(--cream); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+.footer-inner a[href*="dmarketing"]:hover { color: #fff; }
 
 /* ================= responsive ================= */
 @media (max-width: 1024px) {
