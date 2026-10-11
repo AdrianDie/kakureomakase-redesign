@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://adriandie.github.io/kakureomakase-redesign/sitemap.xml
+Sitemap: https://kakureomakase.no/sitemap.xml
